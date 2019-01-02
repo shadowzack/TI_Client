@@ -1,26 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Component } from "react";
+import { HashRouter as Router, Route } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./store";
+import Navbar from "./components/layout/Navbar";
+import home from "./components/layout/home";
+import Footer from "./components/layout/Footer";
+import "./App.css";
+import NotFound from "./components/not-found/NotFound";
+import languages from "./components/languages/Languages";
+import language from "./components/language/Language";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Provider store={store}>
+        <Router>
+          <div className="App">
+            <Navbar />
+            <Route exact path="/" component={home} />
+            <div>
+            <Route exact path="/languages" component={languages} />
+            <Route exact path="/languages/:id" component={language} />
+              <Route exact path="/not-found" component={NotFound} />
+            </div>
+            <Footer />
+          </div>
+        </Router>
+      </Provider>
     );
   }
 }
