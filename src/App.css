@@ -2235,7 +2235,11 @@ footer {
 .footer_s ul li:last-child {
   padding-bottom: 0.1%;
 }
-
+.center_chart{
+  display: flex;
+  justify-content: center;
+  
+}
 .footer_t {
   flex: 2;
   margin-top: 0.5%;

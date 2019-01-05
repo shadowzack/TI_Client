@@ -5,6 +5,7 @@ import Spinner from "../../images/spinner.gif";
 import { getLanguages } from "../../actions/languageActions";
 import LanguageFeed from "./LanguageFeed";
 import ChartLanguages from "./ChartLanguages";
+import BubbleLanguages from "./ChartBubble";
 
 class Languages extends Component {
   componentDidMount() {
@@ -23,6 +24,7 @@ class Languages extends Component {
     }
     return (
       <div>
+        
         <ChartLanguages languages={languages}/>
         <div className="explore">
       
