@@ -23,7 +23,7 @@ class Languages extends Component {
     }
     return (
       <div>
-        <ChartLanguages />
+        <ChartLanguages languages={languages}/>
         <div className="explore">
       
           <div className="explore_header_container">
