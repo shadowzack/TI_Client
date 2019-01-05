@@ -27,7 +27,7 @@ class Languages extends Component {
         <div className="explore">
       
           <div className="explore_header_container">
-            <h1> Explore</h1>
+           
           </div>
          
           <div className="exploreContainer">{LanguageContent}</div>

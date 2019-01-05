@@ -6,45 +6,30 @@ import classnames from "classnames";
 
 
 class LanguageItem extends Component {
+  constructor(){
+    super();
+
+    this.state = {
+         border: false
+    }
+    
+}
+addBorder(){
+  this.setState({border: !this.state.border})
   
+}
   render() {
     const { language } = this.props;
-    
+    let btn_class = this.state.border ? "addBorder" : "removeBorder";
 
     return (
-      <div className="post_item">
-        <div className="post_item_name">
-          {language}
-          <div>
-          
-          </div>
-          <section>
+    <div className={btn_class}>
+<div className="card card-1 " onClick={this.addBorder.bind(this)}>
+<section className="center_hero h1_lanaguage">
             <h1>{language}</h1>
           </section>
-        </div>
-
-        <div className="post_item_des">
-          <p> {this.props.count}</p>
-        </div>
-        <div className="post_item_more">
-          <div className="flex-center ">
-            <div className="post_item_more_like ">
-              <div>
-                {" "}
-                
-                 
-              </div>
-
-              <div>
-                <p>Years : {this.props.years}
-                
-                </p>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
+</div>
+</div>
     );
   }
 }

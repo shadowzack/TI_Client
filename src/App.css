@@ -110,6 +110,11 @@ a {
   -webkit-touch-callout: none;
 }
 
+.center_chart{
+  
+display: flex;
+justify-content: center;
+}
 #hamburger span {
   display: block;
   width: 33px;
@@ -1759,7 +1764,49 @@ select {
   border: 1px solid rgba(0, 0, 0, 0.082);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.103), 0 10px 10px rgba(0, 0, 0, 0.082);
   flex: 1;
+ }
+
+ 
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+   
 }
+.card:active{
+  border-bottom: 1px solid black;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
 .post_item_des {
   display: flex;
   justify-content: center;
@@ -1775,35 +1822,51 @@ select {
 .post_item_name {
   display: flex;
   justify-content: center;
+  
+  
 }
+.addBorder div{border-bottom: 8px solid rgb(38, 26, 204)}
+.removeBorder div{border-bottom: none}
 .post_item_name div {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
-
-.post_item_name div img {
-  max-width: 50px;
-  max-height: 50px;
-  border-radius: 50%;
-  display: block;
+.center_hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .post_item_name section {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
+.h1_lanaguage{
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+  font-size: 30px;
+ 
+  margin: 0 auto;
+}
 .post_item_name section h1 {
   margin: 0;
   padding: inherit;
   border: 0;
-  color: #000000e5;
+  color: whitesmoke;
   font-family: "adelle-sans", sans-serif;
-  font-weight: 100;
+  font-weight: 600;
   line-height: 1.15;
   text-align: center;
-  font-size: 19px;
+  font-size: 40px;
+  padding: 20px 0 20px 0;
+  margin: 0 auto;
+  min-height: 90px;
+  min-width: 200px;
 }
 .post_item_more_like {
   display: flex;
