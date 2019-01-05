@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import Spinner from "../../images/spinner.gif";
 import { getLanguages } from "../../actions/languageActions";
-import ChartLanguages from "./ChartLanguages";
+import LanguageFeed from "./LanguageFeed";
 class Languages extends Component {
   componentDidMount() {
     console.log("mounted")
@@ -17,7 +17,7 @@ class Languages extends Component {
     if (languages === null || loading) {
        // LanguageContent = <Spinner />;
     } else {
-        LanguageContent = <ChartLanguages languages={languages} />;
+        LanguageContent = <LanguageFeed languages={languages} />;
     }
     return (
       <div>

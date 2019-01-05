@@ -6,7 +6,7 @@ import LanguageItem from '../languages/LanguageItem';
  class LanguageFeed extends Component {
   render() {
       const {languages} =this.props;
-    return languages.map(language=><LanguageItem key={language._id} language={language}/>
+    return languages.map(language=><LanguageItem key={language._id} language={language.source} years={language.years[2019]}  count={language.count} />
     )
   }
 }

@@ -6,23 +6,24 @@ import classnames from "classnames";
 
 class LanguageItem extends Component {
   
-  
   render() {
     const { language } = this.props;
+  
 
     return (
       <div className="post_item">
         <div className="post_item_name">
+          {language}
           <div>
           
           </div>
           <section>
-            <h1>{language.Source}</h1>
+            <h1>{language}</h1>
           </section>
         </div>
 
         <div className="post_item_des">
-          <p> {language.Count}</p>
+          <p> {this.props.count}</p>
         </div>
         <div className="post_item_more">
           <div className="flex-center ">
@@ -34,11 +35,7 @@ class LanguageItem extends Component {
               </div>
 
               <div>
-                <p>years : {
-                    JSON.stringify(language.Years)
-                 
-                    
-                }  
+                <p>Years : {this.props.years}
                 
                 </p>
               </div>
