@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import Spinner from "../../images/spinner.gif";
 import { getLanguages } from "../../actions/languageActions";
 import LanguageFeed from "./LanguageFeed";
+import ChartLanguages from "./ChartLanguages";
+
 class Languages extends Component {
   componentDidMount() {
     console.log("mounted")
@@ -21,6 +23,7 @@ class Languages extends Component {
     }
     return (
       <div>
+        <ChartLanguages />
         <div className="explore">
       
           <div className="explore_header_container">

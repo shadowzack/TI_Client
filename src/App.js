@@ -8,6 +8,10 @@ import "./App.css";
 import NotFound from "./components/not-found/NotFound";
 import languages from "./components/languages/Languages";
 import language from "./components/language/Language";
+import '../node_modules/react-vis/dist/style.css';
+import ChartLanguages from "./components/languages/ChartLanguages";
+
+
 class App extends Component {
   render() {
     return (
