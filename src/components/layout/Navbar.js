@@ -10,10 +10,10 @@ class Navbar extends Component{
 <nav className="top_nav">
     <div className="nav_wrapper">
         <section className="logo">
-            <Link to="/languages"></Link>
+            <Link to="/"></Link>
         </section>
         <ul className="main_menu">
-            <li><Link to="/languages">languages</Link></li>
+            <li><Link to="/">languages</Link></li>
         </ul>
         <section className="user">
             <section className="user_profile">
@@ -26,8 +26,8 @@ class Navbar extends Component{
             <span></span>
             <span></span>
             <ul id="hamburger_menu">
-                <li><Link to="/languages"></Link></li>
-                <li><Link to="/languages">languages</Link></li>
+                <li><Link to="/"></Link></li>
+                <li><Link to="/">languages</Link></li>
             </ul>
         </section>
     </div>

@@ -6,7 +6,7 @@ export default class Footer extends Component {
       <footer>
         <section className="footer_f">
           <section className="logo">
-            <Link to="/languages" />
+            <Link to="/" />
           </section>
           <p>
             Create Join and most <br /> importantly enjoy your events
@@ -17,7 +17,7 @@ export default class Footer extends Component {
           <section>
             <ul>
               <li>
-                <Link to="/languages">Languages</Link>
+                <Link to="/">Languages</Link>
               </li>
             </ul>
           </section>
@@ -25,7 +25,7 @@ export default class Footer extends Component {
           <section>
             <ul>
             <li>
-                <Link to="/languages">Languages</Link>
+                <Link to="/">Languages</Link>
               </li>
             </ul>
           </section>
@@ -33,7 +33,7 @@ export default class Footer extends Component {
           <section>
             <ul>
             <li>
-                <Link to="/languages">Languages</Link>
+                <Link to="/">Languages</Link>
               </li>
             </ul>
           </section>
