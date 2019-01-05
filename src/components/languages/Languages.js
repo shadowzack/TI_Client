@@ -24,7 +24,8 @@ class Languages extends Component {
     }
     return (
       <div>
-        
+        <BubbleLanguages languages={languages}/>
+       
         <ChartLanguages languages={languages}/>
         <div className="explore">
       
