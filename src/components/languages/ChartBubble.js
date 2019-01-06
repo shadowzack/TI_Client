@@ -64,7 +64,12 @@ class LanguageFeed extends Component {
         <XYPlot yDomain={[-1, 22]} xDomain={[-1, 5]} width={1200} height={800}>
           <XAxis style={{display:"none"}} />
           <YAxis style={{display:"none"}} />
-         
+          <MarkSeries
+            className="mark-series-example"
+            strokeWidth={2}
+            sizeRange={[0, 15]}
+            data={data}
+          />
           <LabelSeries animation allowOffsetToBeReversed data={array} />
         </XYPlot>
       </div>
