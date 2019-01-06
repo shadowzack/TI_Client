@@ -33,7 +33,7 @@ class LanguageFeed extends Component {
             x: 3,
             y: 7,
             label: 'Wigglytuff',
-            size: 30,
+            size: 1,
             style: {fontSize: 20},
             rotation: 45
           },
@@ -43,24 +43,29 @@ class LanguageFeed extends Component {
           {x: 1, y: 14, label: 'Snorlax', size: 4}
         ]
       };
+
+      
     render() {
+      const array=[];
+      const { languages } = this.props;
+      
+        var contnt = languages.map((language)=> 
+        array.push({x: Math.random()*5, y: Math.random() * 20, label: language.source, size:language.count ,
+          style: {fontSize: 20}}) )
+
         const {data} = this.state;
     return (
-      <div>
+      <div className="center_chart">
         <ShowcaseButton
-          onClick={() => this.setState({data: generateData()})}
+          //onClick={() => this.setState({data: generateData()})}
           buttonContent="UPDATE"
         />
-        <XYPlot yDomain={[-1, 22]} xDomain={[-1, 5]} width={300} height={300}>
-          <XAxis />
-          <YAxis />
-          <MarkSeries
-            className="mark-series-example"
-            strokeWidth={2}
-            sizeRange={[5, 15]}
-            data={data}
-          />
-          <LabelSeries animation allowOffsetToBeReversed data={data} />
+
+        <XYPlot yDomain={[-1, 22]} xDomain={[-1, 5]} width={1200} height={800}>
+          <XAxis style={{display:"none"}} />
+          <YAxis style={{display:"none"}} />
+         
+          <LabelSeries animation allowOffsetToBeReversed data={array} />
         </XYPlot>
       </div>
     );

@@ -24,14 +24,16 @@ a {
 /*main nav*/
 
 .top_nav {
-  background: #fafafa;
+  background: #e9e9e9;
   box-sizing: border-box;
   max-height: 300px;
   width: 100%;
   margin-left: 0;
   padding: 0;
   margin-top: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  display: flex;
+  justify-content: center;
+ 
 }
 
 .logo {
@@ -41,12 +43,12 @@ a {
 
 .logo a {
   display: block;
-
+  background-image: url("./images/Capture.PNG");
   background-repeat: no-repeat;
   height: 66px;
   width: 205px;
   /*background-size: 205px  100%;*/
-  background-size: 65% 70%;
+  background-size: 100% 100%;
 
   background-position: center;
 }
