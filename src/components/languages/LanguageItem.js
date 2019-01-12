@@ -8,15 +8,13 @@ import classnames from "classnames";
 class LanguageItem extends Component {
   constructor(){
     super();
-
     this.state = {
-         border: false
+         border: false,
     }
     
 }
 addBorder(){
   this.setState({border: !this.state.border})
-  
 }
   render() {
     const { language } = this.props;

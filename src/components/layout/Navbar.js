@@ -11,10 +11,7 @@ class Navbar extends Component{
     <div className="nav_wrapper">
     <div className="logo">
    <Link to="/"></Link>
-    </div>
-      
-
-      
+    </div>   
     </div>
 </nav>
       )

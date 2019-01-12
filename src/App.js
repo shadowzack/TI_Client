@@ -12,7 +12,11 @@ import '../node_modules/react-vis/dist/style.css';
 import ChartLanguages from "./components/languages/ChartLanguages";
 
 
+
 class App extends Component {
+
+
+
   render() {
     return (
       <Provider store={store}>
@@ -24,7 +28,7 @@ class App extends Component {
             <Route exact path="/languages/:id" component={language} />
               <Route exact path="/not-found" component={NotFound} />
             </div>
-            <Footer/>
+            {/* <Footer/> */}
           </div>
         </Router>
       </Provider>

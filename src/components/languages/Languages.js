@@ -4,14 +4,27 @@ import PropTypes from "prop-types";
 import Spinner from "../../images/spinner.gif";
 import { getLanguages } from "../../actions/languageActions";
 import LanguageFeed from "./LanguageFeed";
-import ChartLanguages from "./ChartLanguages";
+import ChartLanguages from "./ChartLanguagesv2";
 import BubbleLanguages from "./ChartBubble";
 
 class Languages extends Component {
+  constructor(){
+    super()
+    this.state = {
+      marked: null
+    };
+  } 
+
   componentDidMount() {
     console.log("mounted")
     this.props.getLanguages();
     
+  }
+
+  MarkLanguage(markit){
+    this.setState({
+      marked: markit
+    });
   }
 
   render() {
@@ -24,17 +37,17 @@ class Languages extends Component {
     }
     return (
       <div>
-        <BubbleLanguages languages={languages}/>
+        <BubbleLanguages languages={languages} marked={this.state.marked} MarkLanguage={this.MarkLanguage.bind(this)}/>
        
-        <ChartLanguages languages={languages}/>
-        <div className="explore">
+        <ChartLanguages languages={languages} marked={this.state.marked}/>
+        {/* <div className="explore">
       
           <div className="explore_header_container">
            
           </div>
          
           <div className="exploreContainer">{LanguageContent}</div>
-        </div>
+        </div> */}
    
       </div>
     );
