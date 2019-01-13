@@ -6,16 +6,16 @@ class LanguageFeed extends Component {
 
     render() {
         const { languages } = this.props;
-        var i=180;
+        
 
 
         const array=[['Year',],
-                   [2013,],
-                   [2014,],
-                   [2015,],
-                   [2016,],
-                   [2017,],
-                   [2018,]];
+                   ["2013",],
+                   ["2014",],
+                   ["2015",],
+                   ["2016",],
+                   ["2017",],
+                   ["2018",]];
         {console.log(array)}
 
         var contnt = languages.map((language)=>{

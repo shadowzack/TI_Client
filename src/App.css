@@ -45,16 +45,14 @@ a {
 }
 
 .logo {
-  width: 205px;
-  padding-right: 30px;
-}
+ }
 
 .logo a {
   display: block;
   background-image: url("./images/TI.png");
   background-repeat: no-repeat;
   height: 66px;
-  width: 205px;
+  width: 300px;
   /*background-size: 205px  100%;*/
   background-size: 100% 100%;
 

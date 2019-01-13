@@ -82,7 +82,7 @@ class LanguageFeed extends Component {
           const [selectedItem] = selection
           const dataTable = chartWrapper.getDataTable()
           const { row ,column} = selectedItem
-          this.OnMarkLanguage(row);
+         // this.OnMarkLanguage(row);
           console.log(row)
 
           console.log(this.props.marked)
